@@ -2030,6 +2030,10 @@ input[type=checkbox]:checked + label {
     box-sizing: border-box;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 /* colors */
 
 :root {
@@ -2174,11 +2178,6 @@ nav .searchbutton i:hover {
     color: var(--main-color);
 }
 
-.Tutor {
-    position: relative;
-    right: 58px;
-}
-
 .contact {
     position: relative;
     right: 55px;
@@ -2187,20 +2186,20 @@ nav .searchbutton i:hover {
 nav .replace {
     color: var(--Sub-color-1);
     outline: none;
-    border: 1px solid rgb(140, 140, 140);
     position: relative;
-    top: 10px;
-    left: -30px;
+    top: 2px;
+    left: -55px;
     padding: 15px;
     width: 45px;
     height: 45px;
-    border:1px solid #d5860e;
-    border-radius: 20px;
     background: none;
+    border: none;
 }
+
 
 nav .replace #icon1 {
     color:#e8a43f;
+    font-size:30px ;
 }
 
 nav .replace #icon2 {
@@ -2213,7 +2212,7 @@ nav .replace #icon2 {
     background-color: var(--Sub-color-1);
     z-index: 30;
     position: absolute;
-    top: 84px;
+    top: 80px;
     left: 450px;
     padding: 15px;
     display: none;
@@ -2383,7 +2382,7 @@ input:focus~i {
 
 /* Start sign-in */
 
-.signin {
+.another {
     background-color: transparent;
     backdrop-filter: blur(20px) ;
     padding: 15px;
@@ -2393,19 +2392,26 @@ input:focus~i {
     border-radius: 20px;
 }
 
-.signin p {
+.another p {
     text-align: center;
     font-size: 22px;
     font-weight: 600;
 }
 
-.signin p a {
+.another p:first-child {
+    border-bottom: 2px solid var(--Sub-color-1);
+    padding-bottom: 20px;
+    width: 680px;
+    margin-left: -5px;
+}
+
+.another p a {
     text-decoration: none;
     color:var(--main-color);
     padding-left: 10px;
 }
 
-.signin p a:hover {
+.another p a:hover {
     color: var(--Sub-color-1);
     padding: 8px;
     transition-duration: .5s;
@@ -2415,88 +2421,90 @@ input:focus~i {
 /* End sign-in */
 
 /* end form */
+
 /* Start-footer-style */
 
 footer {
-  background-color: #191919;
-  padding: 30px 60px 10px;
-  margin: 606px 0px;
-  height: 380px;
-  width: 1480px;
+    background-color: #191919;
+    padding: 30px 60px 10px;
+    margin: 606px 0px;
+    height: 380px;
+    width: 1480px;
 }
 
 footer .container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
 }
 
 footer .box h3 {
-  color: white;
-  font-size: 50px;
-  margin: 0 0 20px;
+    color: white;
+    font-size: 50px;
+    margin: 0 0 20px;
 }
 
 footer .box .social {
-  display: flex;
-  margin-bottom: 20px;
-  }
+    display: flex;
+    margin-bottom: 20px;
+    }
 
-  footer .box .social li {
-  margin-right: 15px;
+    footer .box .social li {
+    margin-right: 15px;
 }
 
 footer .box .social li a {
-  background-color: #313131;
-  color: #b9b9b9;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 50px;
-  height: 50px;
-  transition: 0.3s;
-  text-decoration: none;
+    background-color: #313131;
+    color: #b9b9b9;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    transition: 0.3s;
+    text-decoration: none;
 }
 
 footer .box .social .facebook:hover {
-  background-color: #0d4793;
+    background-color: #0d4793;
 }
 
 footer .box .social .twitter:hover {
-  background-color: #1da1f2;
+    background-color: #1da1f2;
 }
 
-  footer .box .social .youtube:hover {
-      background-color: #ff0000;
-  }
+    footer .box .social .youtube:hover {
+        background-color: #ff0000;
+    }
 
 footer .box .text {
-      line-height: 2;
-      color: #b9b9b9;
+        line-height: 2;
+        color: #b9b9b9;
 }
 
 footer .box .line {
-      color: #b9b9b9;
-      margin-bottom: 30px;
+        color: #b9b9b9;
+        margin-bottom: 30px;
 }
 
 footer .box .line .info {
-  line-height: 1.7;
-  flex: 1;
+    line-height: 1.7;
+    flex: 1;
 }
 
 footer .box .line .info span {
-  display: block;
+    display: block;
 }
 
 footer .copyright {
-  padding: 25px 0;
-  text-align: center;
-  color: white;
-  margin: 50px 0 0;
-  border-top: 1px solid #444;
+    padding: 25px 0;
+    text-align: center;
+    color: white;
+    margin: 50px 0 0;
+    border-top: 1px solid #444;
 }
 /* End footer */
+
 }
 
 #sherif-contact{
