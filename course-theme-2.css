@@ -30,15 +30,13 @@ body {
     grid-template-rows: 80px 1500px ;
     gap: 10px;
 }
-
-/* Start-nav-style */
 .page nav {
     grid-column: span 15;
     display: flex;
     width: 1480px;
     background-color: var(--Sub-color-1);
     padding: 10px;
-    border-bottom: 2px solid var(--main-color);
+    border-bottom: 1px solid var(--main-color);
 }
 
 .page nav img {
@@ -48,14 +46,15 @@ body {
 /* Links style */
 
 .page nav .links {
-    margin: 20px 70px 20px 90px;
+    margin: 20px 50px 20px 45px;
     display: grid;
     grid-template-columns: repeat(5,1fr);
-    gap: 20px;
+    gap: 10px;
 }
 .page nav .links a{
     text-decoration: none;
     color: var(--Sub-color-2);
+    width: 95px;
 }
 
 .page nav .links a:hover{
@@ -67,7 +66,7 @@ body {
 
 .page nav .search {
     height: 35px;
-    margin: 15px 8px 15px 0px;
+    margin: 15px 20px 15px 12px;
     outline: none;
     border: 2px solid var(--main-color);
     border-radius: 15px;
@@ -101,13 +100,16 @@ body {
 
 .page nav .login {
     height: 30px;
-    margin: 16px 50px 15px 20px;
+    /* margin: 16px 50px 15px 20px; */
     width: 100px;
     border: none;
     border-radius: 20px;
-    background-color: var(--Sub-color-2);
+    background-color: var(--main-color);
     font-size: 18px;
     font-weight: 500;
+    position: relative;
+    top: 15px;
+    left: 40px;
 }
 
 .page nav .login:hover {
@@ -129,13 +131,16 @@ body {
 
 .page nav .signup {
     height: 30px;
-    margin: 16px 30px 15px -10px;
+    /* margin: 16px 20px 15px 60px; */
     width: 100px;
     border: none;
     border-radius: 20px;
-    background-color: var(--Sub-color-2);
+    background-color: var(--main-color);
     font-size: 18px;
     font-weight: 500;
+    position: relative;
+    top: 15px;
+    left: 70px;
 }
 
 .page nav .signup:hover {
@@ -157,33 +162,44 @@ body {
 .arrow-5 {
     position: absolute;
     top: 30px;
-    left: 540px;
-    color: var(--Sub-color-1);
+    left: 474px;
+    color: var(--Sub-color-2);
     padding-right: 20px;
 }
 
-.contact {
-    padding-left: 25px;
+.profile {
+    background: none;
+    outline: none;
+    border: none;
 }
 
-.new {
+.profile a img {
+    width: 50px;
     position: relative;
-    left: 20px;
+    left: 100px;
 }
+
+.contact {
+    padding-left: 35px;
+}
+
+.TUTOR {
+    position: relative;
+    left: 35px;
+}
+
 
 nav .replace {
     color: var(--Sub-color-1);
+    background:none ;
     outline: none;
     position: relative;
-    top: 10px;
-    left: -30px;
+    top: 1px;
+    left: -20px;
     padding: 15px;
-    background-color: var(--Sub-color-2);
     width: 45px;
     height: 45px;
-    background: none;
-    border:1px solid #d5860e;
-    border-radius: 20px;
+    border:none;
 }
 
 nav .replace #icon1 {
@@ -192,6 +208,7 @@ nav .replace #icon1 {
 
 nav .replace #icon2 {
     color: #444;
+    font-size: 30px;
 }
 /* Drop-menu-style*/
 
@@ -199,8 +216,8 @@ nav .replace #icon2 {
     background-color: var(--Sub-color-1);
     z-index: 30;
     position: absolute;
-    top: 80px;
-    left: 450px;
+    top: 65px;
+    left: 425px;
     padding: 15px;
     display: none;
 }
