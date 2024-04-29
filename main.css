@@ -3616,7 +3616,7 @@ div .log-in{
       justify-content: center;
       margin-top: 20px;
       position: absolute; 
-      top: 16.5%;
+      top: 57%;
       left: 32%;
     }
      .course h1{
@@ -3638,14 +3638,14 @@ div .log-in{
     }
     .second-main .countainer{
       display: flex;
-      margin-top: 25px;
+      margin-top: 40px;
       margin-left: 50px;
       margin-right: 50px;
       justify-content: space-between;
       padding-top: 25px;
      position: relative;
      background-color:rgb(250, 251, 235) ;
-     height: 400px;
+     height: 450px;
      border-radius: 20px;
      border: solid 2px #949494 ;
      top: 4%;
@@ -3663,6 +3663,7 @@ div .log-in{
       padding-bottom: 19px;
       font-size: 17px;
       padding-left: 13px;
+      list-style: none;
     }
     .inculde-coures li i{
       font-size: 26px;
@@ -3738,6 +3739,7 @@ div .log-in{
       margin-bottom: 8px;
       padding-bottom: 4px;
       border-bottom: solid 1px  #949494 ;
+      list-style: none;
       
     }
     .techer .icon i{
@@ -3757,7 +3759,7 @@ div .log-in{
     .audio{
       display: flex;
       position: absolute;
-      top: 35%;
+      top: 135%;
         left: 15%;
     }
     .audio h2{
@@ -3773,7 +3775,11 @@ div .log-in{
     .audio h2:hover{
       background-color: var(--main-color);
     }
-    
+    audio{
+       position: absolute;
+    left: 100%;
+    bottom: 32px;
+    }
     
     /*========================== strat video ============================*/
     .video{
@@ -3825,6 +3831,7 @@ div .log-in{
     .video-main .bottom-video li{
       margin-bottom: 12px;
       border-bottom: solid 2px rgb(214, 223, 216);
+       list-style: none;
     }
     .video-main .bottom-video li p{
       text-transform: uppercase;
@@ -3865,6 +3872,9 @@ div .log-in{
     font-weight: 500;
     display:none;
     }
+    .video-main .top-video li{
+        list-style: none;
+       }
     /* ============================== */
     .reference{
       display: flex;
