@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}   
+:root {
+    --main-color: #f5be6b;
+  }
+
+  body {
+    font-family: "Roboto", sans-serif;
+    background: white;
+  }
+
+  .navigationWrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #222;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.2);
+    color: white;
+    text-transform: uppercase;
+
+    .logo {
+      padding-left: 20px;
+      height: 70px;
+    }
+  }
+
+  .navigation {
+    display: flex;
+    list-style-type: none;
+
+    li {
+      opacity: 1;
+      list-style-type: none;
+      color: white;
+      text-decoration: none;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .parent {
+      padding: 0 10px;
+      cursor: pointer;
+
+      .link {
+        position: relative;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        transition: all 0.3s ease-in-out;
+        color: white;
+
+        &:hover {
+          color: var(--main-color);
+        }
+      }
+    }
+  }
+
+  .down-arrow {
+    margin-left: 5px;
+    align-self: flex-start;
+  }
+
+  .search {
+    position: relative;
+    display: flex;
+  }
+
+  .searchTerm {
+    width: 100%;
+    border: 3px solid var(--main-color);
+    padding: 8px;
+    height: 22px;
+    border-radius: 10px;
+    margin-right: 10px;
+  }
+
+  .searchTerm:focus {
+    outline: none;
+  }
+
+  .search-icon {
+    width: 60px;
+    height: 45px;
+    background-color: #333;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .search-icon i:hover {
+    transform: scale(1.1);
+    color: var(--main-color);
+  }
+  .search-icon i {
+    color: white;
+    font-size: 20px;
+    transition: all 0.1s ease-in-out;
+  }
+
+  .btn {
+    position: relative;
+    background-color: var(--main-color);
+    color: #ffffff;
+    border-radius: 25px;
+    padding: 15px;
+    font-size: 15px;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+  }
+
+  .btn:hover {
+    color: var(--main-color);
+    background-color: #ffffff;
+  }
+
+
+.poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.section {
+    width:100%;
+    min-height:100vh;
+    background-color: #ffffffee;
+}
+
+.container {
+    width: 80%;
+    display: flex; /* Change to flexbox layout */
+    margin: auto;
+    padding-top: 100px;
+  }
+  
+.content-section {
+    flex: 1; /* Allow content section to grow */
+  }
+  
+.image-section {
+    flex: 1;
+    
+  }
+.image-section img {
+    width: 100%;
+    height: auto;
+    padding-left:60px;
+}
+.content-section title {
+    text-transform: uppercase;
+    font-size: 28px;
+}
+.content-section .content h3 {
+    margin-top: 20px;
+    color: rgb(31, 31, 33);
+}
+.content-section .content .button{
+    margin-top: 30px;
+}
+.content-section .content  .button a{
+    background-color: black;
+    padding: 12px 40px;
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 25px;
+    letter-spacing: 1.5px;
+} 
+.content-section .content  .button a:hover{
+    background-color:  rgb(188, 225, 5);
+    color: black;
+}
+.content-section .social i{
+    font-size: 30px;
+    margin-top: 20px;
+    padding: 0px 10px;
+    color:rgb(11, 11, 81);
+}
+.content-section .social i:hover{
+   
+    color:black;
+
+}
+.footer {
+    background-color: #191919;
+    padding: 30px 60px 10px;
+  }
+
+  .footer .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+
+  .footer .box h3 {
+    color: white;
+    font-size: 50px;
+    margin: 0 0 20px;
+  }
+
+  .footer .box .social {
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  .footer .box .social li {
+    margin-right: 15px;
+  }
+
+  .footer .box .social li a {
+    background-color: #313131;
+    color: #b9b9b9;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    transition: 0.3s;
+  }
+
+  .footer .box .social .facebook:hover {
+    background-color: #1877f2;
+  }
+
+  .footer .box .social .twitter:hover {
+    background-color: #1da1f2;
+  }
+
+  .footer .box .social .youtube:hover {
+    background-color: #ff0000;
+  }
+
+  .footer .box .text {
+    line-height: 2;
+    color: #b9b9b9;
+  }
+
+  .footer .box .line {
+    color: #b9b9b9;
+    margin-bottom: 30px;
+  }
+
+  .footer .box .line .info {
+    line-height: 1.7;
+    flex: 1;
+  }
+
+  .footer .box .line .info span {
+    display: block;
+  }
+
+  .footer .copyright {
+    padding: 25px 0;
+    text-align: center;
+    color: white;
+    margin: 50px 0 0;
+    border-top: 1px solid #444;
+  }
+@media screen and (max-width: 768px) {
+    .container {
+        width: 80%;
+        display: flex;
+        margin: auto;
+        padding-top: 50px;
+    }
+    .content-section {
+        float: none;
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+    .image-section {
+        float: none;
+        width: 100%;
+    }
+    .image-section img {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+    
+    .content-section .title {
+        text-align: center;
+        font-size: 19px;
+    }
+    .content-section .content .button {
+        text-align: center;
+        font-size: 19px;
+    }
+    .content-section .content .button a {
+        padding: 9px 30px;
+    }
+    .content-section .social {
+        text-align: center;
+    }
+}
+
+/* Here is the dark  mode styling , we will make JS coe to get it working  */
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .dark-mode .content-section .button a {
+    background-color: #fff;
+    color: #000;
+  }
+  .dark-mode .content-section .button a:hover{
+    background-color: #141414;
+    color: #d2bc9a;
+  }
+  
+  .dark-mode .content-section .social i {
+    color: #fff;
+  }
+  .dark-mode .section {
+    background-color: #000;
+  }
+  .dark-mode .content-section .content h3 {
+    color: antiquewhite;
+  }
+  .dark-mode .content-section .social i:hover /*test*/ {
+    color: #d2bc9a;
+  } /*Dark mode DONE!!*/
